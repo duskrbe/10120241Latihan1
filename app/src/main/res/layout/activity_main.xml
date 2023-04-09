@@ -39,7 +39,6 @@
                 android:text="@string/digiteam"
                 android:textColor="@color/digiblack"
                 android:textSize="@dimen/text_size_16sp"
-                android:lineHeight="@dimen/text_size_22sp"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -47,7 +46,6 @@
                 android:text="@string/digito"
                 android:textColor="@color/digigrey"
                 android:textSize="@dimen/text_size_12sp"
-                android:lineHeight="@dimen/text_size_18sp"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -55,7 +53,6 @@
                 android:text="@string/jabardigi"
                 android:textColor="@color/digigrey"
                 android:textSize="@dimen/text_size_12sp"
-                android:lineHeight="@dimen/text_size_18sp"
                 />
         </LinearLayout>
 
