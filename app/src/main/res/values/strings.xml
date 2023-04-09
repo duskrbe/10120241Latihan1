@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">10120241Latihan1</string>
+    <string name="nama">Arby Febrian Saputro</string>
+    <string name="kelas">IF-6</string>
+    <string name="nim">10120241</string>
+
+    <string name="digiteam">Digiteam</string>
+    <string name="digito">Digital Together Everyone Achieve More</string>
+    <string name="jabardigi">Jabar Digital Service</string>
+    
+    <string name="diaseka">Dias Eka Fredianto, S.Kom, B.IT</string>
+    <string name="uidesi">UI Designer</string>
+    
+    <string name="jamkerja">Jam Kerja Bulan Ini</string>
+    <string name="jamkerjasub">Jam Kerja Bulan Ini: 130.53 Jam</string>
+    <string name="jam130">130.53 Jam</string>
+    <string name="batasmin">Batas Minimum Jam Kerja 170jam/bulan</string>
+    <string name="chekin">Checkin</string>
+
+    <string name="laporankamu">Laporan Kamu</string>
+    <string name="maret">Maret</string>
+    <string name="april">April</string>
+    <string name="buatlapor">Buat Laporan</string>
+    
+    <string name="izin">Izin</string>
+    <string name="kehadir">Kehadiran</string>
+    <string name="laporan">laporan</string>
+    <string name="agenda">agenda</string>
+    <string name="booking">booking</string>
+    <string name="wiki">wiki</string>
+
 </resources>
