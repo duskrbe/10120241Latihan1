@@ -10,14 +10,22 @@
     <dimen name="text_size_20sp">20sp</dimen>
     <dimen name="text_size_22sp">22sp</dimen>
     <dimen name="text_size_24sp">24sp</dimen>
-    
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_2sp">2sp</dimen>
+    <dimen name="text_size_38dp">38dp</dimen>
+
     <dimen name="jarak_10dp">10dp</dimen>
     <dimen name="jarak_12dp">12dp</dimen>
     <dimen name="jarak_14dp">14dp</dimen>
     <dimen name="jarak_16dp">16dp</dimen>
     <dimen name="jarak_18dp">18dp</dimen>
     <dimen name="jarak_20dp">20dp</dimen>
+    <dimen name="jarak_23dp">23dp</dimen>
     <dimen name="jarak_24dp">24dp</dimen>
     <dimen name="jarak_26dp">26dp</dimen>
     <dimen name="jarak_28dp">28dp</dimen>
+    <dimen name="jarak_17dp">17dp</dimen>
+    <dimen name="jarak_30dp">30dp</dimen>
+    <dimen name="jarak_8dp">8dp</dimen>
 </resources>

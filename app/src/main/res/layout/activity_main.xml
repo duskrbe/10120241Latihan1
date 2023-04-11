@@ -4,61 +4,931 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/jarak_16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/jarak_20dp"
-        android:background="@color/softgreen"
-        >
 
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:src="@drawable/digilogo"
-            android:layout_marginRight="@dimen/jarak_10dp"
-            android:layout_marginEnd="@dimen/jarak_10dp"
-            android:background="@color/softgreen"
-            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:orientation="vertical"
+        android:padding="@dimen/jarak_16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            app:cardCornerRadius="@dimen/jarak_8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/softgreen">
+
+                <ImageView
+                    android:id="@+id/tv_digilogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/jarak_24dp"
+                    android:layout_marginTop="@dimen/jarak_23dp"
+                    android:layout_marginBottom="@dimen/jarak_24dp"
+                    android:background="@drawable/digilogo" />
+
+                <TextView
+                    android:id="@+id/tv_nama_digilogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_size_10sp"
+                    android:layout_marginTop="@dimen/text_size_16sp"
+                    android:layout_toRightOf="@+id/tv_digilogo"
+                    android:text="@string/digiteam"
+                    android:textColor="@color/digihitam"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_digideskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nama_digilogo"
+                    android:layout_marginLeft="@dimen/text_size_10sp"
+                    android:layout_marginTop="@dimen/text_size_2sp"
+                    android:layout_toRightOf="@+id/tv_digilogo"
+                    android:text="@string/digito"
+                    android:textColor="@color/digiabu"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_digideskripsi"
+                    android:layout_marginLeft="@dimen/text_size_10sp"
+                    android:layout_marginTop="@dimen/text_size_2sp"
+                    android:layout_marginBottom="@dimen/text_size_17sp"
+                    android:layout_toRightOf="@+id/tv_digilogo"
+                    android:text="@string/jabardigi"
+                    android:textColor="@color/digiabu"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_24dp"
+            android:layout_marginBottom="@dimen/jarak_28dp">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/tv_nama_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_size_8sp"
+                android:layout_toRightOf="@+id/iv_profile"
+                android:text="@string/diaseka"
+                android:textColor="@color/digihitam"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nama_profile"
+                android:layout_marginLeft="@dimen/text_size_8sp"
+                android:layout_marginTop="@dimen/text_size_2sp"
+                android:layout_toRightOf="@+id/iv_profile"
+                android:text="@string/uidesi"
+                android:textColor="@color/digiabu"
+                android:textSize="@dimen/text_size_14sp" />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/jarak_8dp"
+            app:cardBackgroundColor="@color/putihCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/jarak_16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_size_16sp"
+                    android:text="@string/jamkerja"
+                    android:textColor="@color/hitamJam"
+                    android:textSize="@dimen/text_size_20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jamkerjasub"
+                    android:textColor="@color/biru"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/jarak_8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/jam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:background="#008444"
+                                    android:padding="@dimen/jarak_8dp"
+                                    android:text="130.53 JAM"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="@dimen/text_size_20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="#16A75C"
+                                    android:drawableRight="@drawable/jam"
+                                    android:padding="@dimen/jarak_8dp"
+                                    android:textSize="@dimen/text_size_20sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/jarak_8dp"
+                    android:layout_marginBottom="@dimen/jarak_24dp"
+                    android:text="@string/batasmin"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/digiabu"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:background="@drawable/corner_button"
+                        android:text="@string/chekin"
+                        android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jarak_24dp"
+            android:layout_marginBottom="@dimen/jarak_24dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_size_16sp"
+                    android:text="@string/laporankamu"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/jarak_20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jarak_8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/maret"
+                        android:textColor="@color/hijauBulan"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:id="@+id/april"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/april"
+                        android:textColor="@color/hijauBulan"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jarak_24dp"
+                    android:orientation="horizontal">
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="5"
+                        android:rowCount="7">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#1FB767" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#1FB767" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#C3E9D0" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#008444" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:columnCount="5"
+                        android:rowCount="7">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#069550" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#069550" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94"/>
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#069550" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#9BDBB3" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#069550" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#70CD94" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#16A75C" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#069550" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_radiuskotak"
+                            android:backgroundTint="#F5F5F5" />
+                    </GridLayout>
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/corner_button"
+                    android:backgroundTint="@color/hijauJam1"
+                    android:text="@string/buatlapor"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginBottom="@dimen/jarak_30dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/digiteam"
-                android:textColor="@color/digiblack"
-                android:textSize="@dimen/text_size_16sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/izin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/izin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/izin"
+                    android:text="Izin"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/digito"
-                android:textColor="@color/digigrey"
-                android:textSize="@dimen/text_size_12sp"
-                />
-            <TextView
-                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/iv_kehadiran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/kehadiran" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_kehadiran"
+                    android:text="kehadiran"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/jabardigi"
-                android:textColor="@color/digigrey"
-                android:textSize="@dimen/text_size_12sp"
-                />
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/iv_laporan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/laporan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_laporan"
+                    android:text="laporan"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/agenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/agenda" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/agenda"
+                    android:text="Izin"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/iv_booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/booking" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_booking"
+                    android:text="booking"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/iv_wiki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/wiki" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_wiki"
+                    android:text="wiki"
+                    android:textAlignment="center"
+                    android:textColor="#424242" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
-
-
 
 
 </ScrollView>
